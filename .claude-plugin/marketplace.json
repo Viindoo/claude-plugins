@@ -12,7 +12,8 @@
         "source": "git-subdir",
         "url": "https://github.com/Viindoo/odoo-semantic-mcp.git",
         "path": "dist/odoo-semantic-plugin",
-        "ref": "main"
+        "ref": "v0.2.0",
+        "sha": "bb8f1ab36aa0144fc23adf9cf40e8e72dc09eb3c"
       },
       "description": "Odoo codebase intelligence — inheritance chains, field impact, upgrade planning. Exposes 14 MCP tools + 11 persona skills."
     }
