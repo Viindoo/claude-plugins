@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "viindoo-plugins",
+  "owner": {
+    "name": "Viindoo",
+    "url": "https://github.com/Viindoo"
+  },
+  "plugins": [
+    {
+      "name": "odoo-semantic",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Viindoo/odoo-semantic-mcp.git",
+        "path": "dist/odoo-semantic-plugin",
+        "ref": "main"
+      },
+      "description": "Odoo codebase intelligence — inheritance chains, field impact, upgrade planning. Exposes 14 MCP tools + 11 persona skills."
+    }
+  ]
+}
