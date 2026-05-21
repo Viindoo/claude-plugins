@@ -9,9 +9,8 @@
     {
       "name": "odoo-semantic",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/Viindoo/odoo-mcp-client.git",
-        "path": ".",
+        "source": "github",
+        "repo": "Viindoo/odoo-mcp-client",
         "ref": "master",
         "sha": "e5e44769ce366900612b1e56add7b50118df07d9"
       },
