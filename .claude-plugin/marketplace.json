@@ -14,7 +14,7 @@
         "ref": "master",
         "sha": "e5e44769ce366900612b1e56add7b50118df07d9"
       },
-      "description": "Odoo codebase intelligence \u2014 inheritance chains, field impact, upgrade planning. Exposes 28 MCP tools + 15 persona skills."
+      "description": "Odoo codebase intelligence - inheritance chains, field impact, upgrade planning. MCP tools + persona skills for Odoo."
     }
   ]
 }
