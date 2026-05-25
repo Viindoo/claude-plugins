@@ -12,7 +12,7 @@
         "source": "github",
         "repo": "Viindoo/odoo-mcp-client",
         "ref": "master",
-        "sha": "e5e44769ce366900612b1e56add7b50118df07d9"
+        "sha": "3b48e542b1c843d02ee942c4f74c7b63f776e8e4"
       },
       "description": "Odoo codebase intelligence - inheritance chains, field impact, upgrade planning. MCP tools + persona skills for Odoo."
     }
