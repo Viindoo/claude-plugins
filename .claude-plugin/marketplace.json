@@ -7,14 +7,26 @@
   },
   "plugins": [
     {
-      "name": "odoo-semantic",
+      "name": "odoo-semantic-skills",
       "source": {
-        "source": "github",
-        "repo": "Viindoo/odoo-mcp-client",
+        "source": "git-subdir",
+        "url": "https://github.com/Viindoo/odoo-mcp-client",
+        "path": "plugins/odoo-semantic-skills",
         "ref": "master",
-        "sha": "459b91e4a4af63125cbbdb8c947dc1eb265ad4b4"
+        "sha": "877e4348504a8b6e78dd56d39dc6c40176571143"
       },
-      "description": "Odoo codebase intelligence - inheritance chains, field impact, upgrade planning. MCP tools + persona skills for Odoo."
+      "description": "Odoo AI workforce skills - 22 personas + 2 agents + 5 workflow commands across engineering, sales, marketing, strategy. Auto-installs odoo-semantic-mcp."
+    },
+    {
+      "name": "odoo-semantic-mcp",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Viindoo/odoo-mcp-client",
+        "path": "plugins/odoo-semantic-mcp",
+        "ref": "master",
+        "sha": "877e4348504a8b6e78dd56d39dc6c40176571143"
+      },
+      "description": "MCP server connection for Odoo Semantic - semantic code intelligence (inheritance chains, field impact, ORM validation) over HTTP. Configure via /odoo-semantic-mcp:connect."
     }
   ]
 }
