@@ -6,12 +6,12 @@ Each Viindoo project hosts its own plugin source. To register it here:
 
 ### 1. Prepare your plugin source
 
-In your project repo, create `dist/<plugin-name>/` with:
+In your project repo, create `plugins/<plugin-name>/` with:
 
 ```
-dist/<plugin-name>/
+plugins/<plugin-name>/
 ├── .claude-plugin/
-│   └── plugin.json      # name, userConfig, mcpServers, skills, agents, commands (no version field — see below)
+│   └── plugin.json      # name, userConfig, mcpServers, skills, agents, commands (version optional — see below)
 ├── .mcp.json             # MCP server config using ${user_config.*} refs
 ├── skills/               # SKILL.md files
 ├── agents/               # agent .md files (optional)
@@ -23,7 +23,7 @@ Follow the [Claude Code plugin spec](https://code.claude.com/docs/en/plugins-ref
 
 For HTTP MCP servers requiring authentication, use `userConfig` with `"sensitive": true` — **never hardcode API keys**.
 
-**Do not set `version` in `plugin.json`.** Claude Code uses the pinned SHA as the version identifier. Every time the SHA in `marketplace.json` is updated, users automatically receive the new content. If you set an explicit version string, you would need to bump it manually on every change — the auto-pin workflow would not be enough.
+**The `version` field in `plugin.json` is optional.** Content delivery is driven by the pinned `sha` in `marketplace.json`, not the version string: every time the SHA is updated (automatically, via the auto-pin workflow), users receive the new content regardless of whether a version is set. Set an explicit `version` only if you want a human-readable version shown in the plugin list (e.g. the `odoo-semantic-skills` / `odoo-semantic-mcp` plugins use `2.0.0` / `1.0.0`); you do not need to bump it for updates to propagate.
 
 ### 2. Open a PR here
 
@@ -35,7 +35,7 @@ Add an entry to `.claude-plugin/marketplace.json`:
   "source": {
     "source": "git-subdir",
     "url": "https://github.com/Viindoo/<your-repo>.git",
-    "path": "dist/<plugin-name>",
+    "path": "plugins/<plugin-name>",
     "ref": "master",
     "sha": "<exact-commit-sha-after-your-pr-merges>"
   },
@@ -47,7 +47,7 @@ Pin `sha` to the exact commit where your plugin landed. This is the anti-drift a
 
 ### 3. Set up auto-pinning in your plugin repo
 
-After registering the plugin, wire up the auto-pin workflow so that every merge to `master` that touches `dist/<plugin-name>/` automatically opens a SHA-update PR here.
+After registering the plugin, wire up the auto-pin workflow so that every merge to `master` that touches `plugins/<plugin-name>/` automatically opens a SHA-update PR here.
 
 **Required setup (one-time per plugin repo):**
 
@@ -75,7 +75,7 @@ on:
   push:
     branches: [master]
     paths:
-      - 'dist/<plugin-dir>/**'
+      - 'plugins/<plugin-dir>/**'
 
 jobs:
   pin-sha:
