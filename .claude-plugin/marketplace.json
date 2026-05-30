@@ -13,7 +13,7 @@
         "url": "https://github.com/Viindoo/odoo-mcp-client",
         "path": "plugins/odoo-semantic-skills",
         "ref": "master",
-        "sha": "041733581e8c6df47cd161f801444d5f3ad0ffff"
+        "sha": "964f85f1281579162b06b2d0256d992a09fa440f"
       },
       "description": "Odoo AI workforce skills - 22 personas + 2 agents + 5 workflow commands across engineering, sales, marketing, strategy. Auto-installs odoo-semantic-mcp."
     },
@@ -24,7 +24,7 @@
         "url": "https://github.com/Viindoo/odoo-mcp-client",
         "path": "plugins/odoo-semantic-mcp",
         "ref": "master",
-        "sha": "041733581e8c6df47cd161f801444d5f3ad0ffff"
+        "sha": "964f85f1281579162b06b2d0256d992a09fa440f"
       },
       "description": "MCP server connection for Odoo Semantic - semantic code intelligence (inheritance chains, field impact, ORM validation) over HTTP. Configure via /odoo-semantic-mcp:connect."
     }
