@@ -8,8 +8,8 @@ Official Claude Code plugin marketplace for Viindoo products.
 # Add this marketplace (one-time)
 claude plugin marketplace add Viindoo/claude-plugins
 
-# Install the Odoo AI workforce skills (auto-installs the odoo-semantic-mcp dependency)
-claude plugin install odoo-semantic-skills@viindoo-plugins
+# Install the Odoo AI Agent Team (auto-installs the odoo-semantic-mcp dependency)
+claude plugin install odoo-ai-agents@viindoo-plugins
 
 # Then configure the MCP server connection (API key + URL)
 /odoo-semantic-mcp:connect
@@ -18,7 +18,7 @@ claude plugin install odoo-semantic-skills@viindoo-plugins
 Or in a Claude Code interactive session:
 ```
 /plugin marketplace add Viindoo/claude-plugins
-/plugin install odoo-semantic-skills@viindoo-plugins
+/plugin install odoo-ai-agents@viindoo-plugins
 /odoo-semantic-mcp:connect
 ```
 
@@ -34,7 +34,7 @@ claude plugin install odoo-semantic-mcp@viindoo-plugins
 
 | Plugin | Description | Source |
 |--------|-------------|--------|
-| `odoo-semantic-skills` | Odoo AI workforce — 22 skill personas + 2 agents + 5 workflow commands across engineering, sales, marketing, strategy. Auto-installs `odoo-semantic-mcp`. | [odoo-mcp-client](https://github.com/Viindoo/odoo-mcp-client) (`plugins/odoo-semantic-skills`) |
+| `odoo-ai-agents` | Odoo AI Agent Team — 40 skills + 7 agents + 9 workflow commands across engineering, sales, marketing, strategy. Auto-installs `odoo-semantic-mcp`. | [odoo-mcp-client](https://github.com/Viindoo/odoo-mcp-client) (`plugins/odoo-ai-agents`) |
 | `odoo-semantic-mcp` | MCP server connection for Odoo Semantic — semantic code intelligence (inheritance chains, field impact, ORM validation) over HTTP. Configure via `/odoo-semantic-mcp:connect`. | [odoo-mcp-client](https://github.com/Viindoo/odoo-mcp-client) (`plugins/odoo-semantic-mcp`) |
 
 ## For Plugin Developers
