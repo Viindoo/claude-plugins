@@ -23,7 +23,7 @@ Follow the [Claude Code plugin spec](https://code.claude.com/docs/en/plugins-ref
 
 For HTTP MCP servers requiring authentication, use `userConfig` with `"sensitive": true` — **never hardcode API keys**.
 
-**The `version` field in `plugin.json` is optional.** Content delivery is driven by the pinned `sha` in `marketplace.json`, not the version string: every time the SHA is updated (automatically, via the auto-pin workflow), users receive the new content regardless of whether a version is set. Set an explicit `version` only if you want a human-readable version shown in the plugin list (e.g. the `odoo-semantic-skills` / `odoo-semantic-mcp` plugins use `2.0.0` / `1.0.0`); you do not need to bump it for updates to propagate.
+**The `version` field in `plugin.json` is optional.** Content delivery is driven by the pinned `sha` in `marketplace.json`, not the version string: every time the SHA is updated (automatically, via the auto-pin workflow), users receive the new content regardless of whether a version is set. Set an explicit `version` only if you want a human-readable version shown in the plugin list (e.g. the `odoo-ai-agents` / `odoo-semantic-mcp` plugins use `2.0.0` / `1.0.0`); you do not need to bump it for updates to propagate.
 
 ### 2. Open a PR here
 
