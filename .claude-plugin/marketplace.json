@@ -13,7 +13,7 @@
         "url": "https://github.com/Viindoo/odoo-mcp-client",
         "path": "plugins/odoo-ai-agents",
         "ref": "master",
-        "sha": "a430d7cd323f22d40d0009b0835c80c1cfcf4902"
+        "sha": "64f2b33ef547dffe5c64fabe59a70ea4e07eba33"
       },
       "description": "Odoo AI Agent Team - 40 skills + 7 agents + 9 workflow commands across engineering, sales, marketing, strategy. Auto-installs odoo-semantic-mcp."
     },
@@ -24,7 +24,7 @@
         "url": "https://github.com/Viindoo/odoo-mcp-client",
         "path": "plugins/odoo-semantic-mcp",
         "ref": "master",
-        "sha": "a430d7cd323f22d40d0009b0835c80c1cfcf4902"
+        "sha": "64f2b33ef547dffe5c64fabe59a70ea4e07eba33"
       },
       "description": "MCP server connection for Odoo Semantic - semantic code intelligence (inheritance chains, field impact, ORM validation) over HTTP. Configure via /odoo-semantic-mcp:connect."
     },
@@ -35,7 +35,7 @@
         "url": "https://github.com/Viindoo/odoo-mcp-client",
         "path": "plugins/git-toolkit",
         "ref": "master",
-        "sha": "a430d7cd323f22d40d0009b0835c80c1cfcf4902"
+        "sha": "64f2b33ef547dffe5c64fabe59a70ea4e07eba33"
       },
       "description": "Safe git/GitHub toolkit for AI agents - context-isolated, guardrailed ops from one-liners to large history rewrites."
     }
