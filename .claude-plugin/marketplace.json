@@ -38,6 +38,28 @@
         "sha": "4fb5783850f2bac44db5521eac2d1720063cce24"
       },
       "description": "Safe git/GitHub toolkit for AI agents - context-isolated, guardrailed ops from one-liners to large history rewrites."
+    },
+    {
+      "name": "viindoo-presales",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Viindoo/viindoo-team-plugins.git",
+        "path": "plugins/viindoo-presales",
+        "ref": "master",
+        "sha": "c3d3bf2db04e34b258c0b7096f492a48ea920fa3"
+      },
+      "description": "Viindoo presales: raw survey docs -> spec -> BPMN -> drawio/HTML, deliverable review, Viindoo source lookup."
+    },
+    {
+      "name": "viindoo-marketing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Viindoo/viindoo-team-plugins.git",
+        "path": "plugins/viindoo-marketing",
+        "ref": "master",
+        "sha": "c3d3bf2db04e34b258c0b7096f492a48ea920fa3"
+      },
+      "description": "Viindoo marketing: Vietnamese content via Gemini and bilingual viindoo.com blog drafts."
     }
   ]
 }
