@@ -46,7 +46,7 @@
         "url": "https://github.com/Viindoo/viindoo-team-plugins.git",
         "path": "plugins/viindoo-presales",
         "ref": "master",
-        "sha": "ffe16c25149f651c90ae7db594a6e04e5d2b556b"
+        "sha": "0afb6306ccbe64573398a3bb9f7d35e6ea8b3dcc"
       },
       "description": "Viindoo presales: raw survey docs -> spec -> BPMN -> drawio/HTML, deliverable review, Viindoo source lookup."
     },
